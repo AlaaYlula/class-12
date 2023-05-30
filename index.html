@@ -14,37 +14,52 @@
         <h1> ASAC Coffee House </h1>
     </header>
     <main>
-        <section>
 
-            <form id="drinkForm">
-                <fieldset>
-                    <legend>Add new drink</legend>
-                    <div>
-                        <label for="coffeName">Coffee Name</label>
-                        <input type="text" id="coffeName" name="coffee" placeholder="add coffee name" />
-                    </div>
-                    <div>
-                        <label for="ingredients">Ingredients</label>
-                        <input type="text" name="ingredients" id="ingredients" placeholder="split with comma" />
-                    </div>
-                    <div>
-                        <label for="image">Image</label>
-                        <input type="text" name="image" id="image" placeholder="use short link" />
-                    </div>
-                    <div>
-                        <label for="hot">is Hot</label>
+        <!-- code here -->
+        <div class="card">
+            <div class="card-image">
+                <h2 class="card-heading">
+                    Get started
+                    <small>Add New Drink</small>
+                </h2>
+            </div>
+            <form id="drinkForm" class="card-form">
+                <div class="input">
+                    <input type="text" id="coffeName" name="coffee" placeholder="add coffee name" class="input-field" />
+                    <label for="coffeName" class="input-label">Drink name</label>
+                </div>
+                <div class="input">
+                    <input type="text" class="input-field" name="ingredients" id="ingredients"
+                        placeholder="split with comma" />
+                    <label for="ingredients" class="input-label">Drink Ingredients</label>
+                </div>
+                <div class="input">
+                    <input type="text" class="input-field" name="image" id="image" placeholder="Enter Image path" />
+                    <label for="image" class="input-label">Drink Image URL</label>
+                </div>
+                <div class="input">
+                    <label for="hot" class="form-control">
                         <input type="checkbox" id="hot" name="hot" />
-                    </div>
-                    <button type="submit">save</button>
-                </fieldset>
+                        is Hot
+                    </label>
+                </div>
+                <div class="action">
+                    <button type="submit" class="action-button">Save</button>
+                </div>
             </form>
-        </section>
-        <section id ="table">
-            
-        </section>
-        <section id="drinks">
 
-        </section>
+        </div>
+
+
+        <div>
+            <section id="table">
+
+            </section>
+            <section id="drinks">
+
+            </section>
+        </div>
+
     </main>
     <footer>
     </footer>
