@@ -86,7 +86,6 @@ function render() {/////////////////////////////////////////////////////////////
 
         //create div for the content of the instance(name,ingredients,price,Hot/Cold)
         let contentDiv = document.createElement("div");
-        contentDiv.classList.add("container");
         drinkDiv.appendChild(contentDiv);
 
         // create  h3 element for the Drink name
