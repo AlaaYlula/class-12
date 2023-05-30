@@ -70,8 +70,9 @@ let drinks = document.getElementById('drinks');
 
 // }
 
-function render() {
-    drinks.innerHTML = ''; // solve the duplicate 
+function render() {/////////////////////////////////////////////////////////////////////////////////// 11 11 11 11 11 11 
+
+    drinks.innerHTML = ''; // solve the duplicate /////////////////////////////////////////////////// 13 13 13 13 13 
     for (let i = 0; i < drinksArray.length; i++) {
         //create a div for each instance(card)
         let drinkDiv = document.createElement("div");
@@ -139,9 +140,9 @@ function handler(e) {
     console.log("the Object before store into LS ",drinksArray)
 
     //Convert JS to JSON 
-    let jsonObj = JSON.stringify(drinksArray);
+    let jsonObj = JSON.stringify(drinksArray);/////////////////////////////////////////////////////////////////  66666666666666666
     // Save the Object to the LS 
-    window.localStorage.setItem("drinks", jsonObj);
+    window.localStorage.setItem("drinks", jsonObj);/////////////////////////////////////////////////////////////  55555555555555555
     */
     storeIntoLocalStorage();
     /*
@@ -152,7 +153,7 @@ function handler(e) {
     */
     //readFromLocalStorage(); /////////////////////////////////// Don not read here .. 
 
-    // solve render the new added item 
+    // solve render the new added item ///////////////////////////////////////////////////////////////////// 12 12 12 12 12 
     render();
 
     //
@@ -160,7 +161,7 @@ function handler(e) {
 
 };
 
-function storeIntoLocalStorage() {
+function storeIntoLocalStorage() {////////////////////////////////////////////////////////////////////////  9999999999999999999
     // Object before save it to LS
     console.log("the Array before store into LS ", drinksArray)
 
@@ -177,11 +178,11 @@ function readFromLocalStorage() {
     let jsArray = JSON.parse(objectLS);
     console.log("the Array after read from LS ", jsArray);
 
-    if (jsArray != null) {
+    if (jsArray != null) {   /////////////////////////////////////////////////////////////////  14 14 14 14 14 14 
         // drinksArray = jsArray;
         // console.log("the Drinks Array after read from LS ", drinksArray);
 
-        for (let i = 0; i < jsArray.length ; i++) {
+        for (let i = 0; i < jsArray.length ; i++) {    /////////////////////////////////////////// 15 15 15 15 15 
             // Re-instantiation 
             let drink = new Coffee(jsArray[i].coffeName,jsArray[i].ingredients,jsArray[i].image,jsArray[i].isHot);
             drink.price = jsArray[i].price;
@@ -228,7 +229,7 @@ let tableSection = document.getElementById("table");
 
 
  }
-readFromLocalStorage();
+readFromLocalStorage();/////////////////////////////////////////////////////////////////////////////////// 10 10 10 10 10 10 10 
 render();
 
 renderTable();
